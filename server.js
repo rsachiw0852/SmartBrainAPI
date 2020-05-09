@@ -98,6 +98,6 @@ db.select('*').from('applicant').where({id})
 //Image----------------------
 app.put('/image',(req,res)=>{image.handelImage(req,res,db)});
 app.post('/imageurl',(req,res)=>{image.handelApi(req,res)})
-app.listen(3000,()=>{
-    console.log("app is running on Port 3000 ");
+app.listen(process.env.Port || 3000,()=>{
+    console.log(`app is running on Port  ${process.env.Port}`);
 });

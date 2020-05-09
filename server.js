@@ -59,7 +59,7 @@ login:[
 }
 
 app.get('/',(req,res)=>{
-    res.send(database.users)
+    res.send("it's working !")
     //res.send("This is working.");
     //console.log("It is working.");
 })

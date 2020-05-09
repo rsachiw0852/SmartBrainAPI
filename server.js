@@ -28,6 +28,7 @@ const app=express();
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(cors());
+/*
 const database={
 users:[
     {
@@ -57,6 +58,7 @@ login:[
 ]
 
 }
+*/
 
 app.get('/',(req,res)=>{
     res.send("it's working !")
